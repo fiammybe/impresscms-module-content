@@ -35,6 +35,9 @@ function editcontent($content_id = 0, $clone = false, $content_pid = false) {
 	} elseif (!$contentObj->isNew() && $clone) {
 		$contentObj->hideFieldFromForm(array('content_published_date', 'content_updated_date'));
 		$contentObj->setVar('content_id', 0);
+		$contentObj->setVar('counter', 0);
+		$contentObj->setVar('content_notification_sent', 0);
+		$contentObj->setVar("content_comments", 0);
 		$contentObj->setNew();
 		icms::$module->displayAdminMenu(0, _AM_CONTENT_CONTENTS . " > " . _AM_CONTENT_CONTENT_CLONE);
 		$sform = $contentObj->getForm(_AM_CONTENT_CONTENT_CLONE, 'addcontent');
