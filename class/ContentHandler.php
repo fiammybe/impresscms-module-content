@@ -154,7 +154,7 @@ class mod_content_ContentHandler extends icms_ipf_Handler {
 		}
 
 		if ($content_pid !== false)	$criteria->add(new icms_db_criteria_Item('content_pid', $content_pid));
-
+		$this->setGrantedObjectsCriteria($criteria, "content_read");
 		return $criteria;
 	}
 
@@ -188,9 +188,7 @@ class mod_content_ContentHandler extends icms_ipf_Handler {
 		$contents = $this->getObjects($criteria, true, false);
 		$ret = array();
 		foreach ($contents as $content){
-			if ($content['accessgranted']){
 				$ret[$content['content_id']] = $content;
-			}
 		}
 		return $ret;
 	}
@@ -369,7 +367,6 @@ class mod_content_ContentHandler extends icms_ipf_Handler {
 				$ret[$j] = '-' . $subccontents[$j];
 			}
 		}
-
 		return $ret;
 	}
 
