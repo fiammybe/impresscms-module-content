@@ -113,6 +113,7 @@ function getPages($showsubs = true, $sort='content_weight', $order='ASC', $conte
 	foreach ($impress_content as $content){
 		$pages[$i]['title'] = $content->getVar('content_title');
 		$pages[$i]['menu'] = $content_handler->makeLink($content);
+		$pages[$i]['id'] = $content->id();
 		if ($showsubs){
 			$subs = getPages($showsubs, $sort, $order, $content->getVar('content_id'));
 			if (count($subs) > 0){

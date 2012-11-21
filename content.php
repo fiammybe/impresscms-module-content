@@ -136,6 +136,7 @@ if (in_array($clean_op, $valid_op, true)){
 
 			if ($contentConfig['com_rule'] && $contentObj->getVar('content_cancomment')) {
 				$icmsTpl->assign('content_content_comment', true);
+				if(!$clean_content_id) $_GET['content_id'] = $contentObj->id();
 				include_once ICMS_ROOT_PATH . '/include/comment_view.php';
 			}
 			break;
