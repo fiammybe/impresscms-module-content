@@ -37,7 +37,7 @@ $modversion = array(
 	'status'					=> "Final",
 	'date'						=> "18 Sept 2011",
 	'author_word'				=> "",
-	'warning'					=> _CO_ICMS_WARNING_R,
+	'warning'					=> _CO_ICMS_WARNING_RC,
 
 /** Contributors */
 	'developer_website_url'		=> "http://www.impresscms.org",
