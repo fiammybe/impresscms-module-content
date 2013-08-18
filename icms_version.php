@@ -19,7 +19,7 @@ $modversion = array(
 	'name'						=> _MI_CONTENT_MD_NAME,
 	'version'					=> 1.2,
 	'description'				=> _MI_CONTENT_MD_DESC,
-	'author'					=> "Rodrigo P Lima aka TheRplima",
+	'author'					=> "Rodrigo P Lima aka TheRplima, Phoenyx, skenow, QM-B",
 	'credits'					=> "The ImpressCMS Project",
 	'help'						=> "",
 	'license'					=> "GNU General Public License (GPL)",
@@ -34,8 +34,8 @@ $modversion = array(
 
 /**  Development information */
 	'status_version'			=> "RC",
-	'status'					=> "Final",
-	'date'						=> "18 Sept 2011",
+	'status'					=> "RC",
+	'date'						=> "18 Aug 2013",
 	'author_word'				=> "",
 	'warning'					=> _CO_ICMS_WARNING_RC,
 
