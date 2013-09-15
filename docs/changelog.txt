@@ -1,3 +1,15 @@
+=== Content 1.2 Final ===
+Release date: 15 Sept 2013
+Revision: 
+ 
+ ''' Fixed '''
+* #12 edit Content > can not create a Symlink
+* #246 false pagination
+* #250 sometimes no function for comment
+* #282 Clone of content also clones pageviews
+* #409 bug with content pagination
+* #434 Content Menu Block of Module "Content" generates links that wont show comment feature
+
 === Content 1.1 Final ===
 Release date: 18 Sept 2011
 Revision: 22686
