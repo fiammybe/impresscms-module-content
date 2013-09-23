@@ -97,12 +97,24 @@ if (in_array($clean_op, $valid_op, true)) {
 		case "addcontent" :
 			$controller = new icms_ipf_Controller($content_content_handler);
 			$controller->storeFromDefaultForm(_AM_CONTENT_CONTENT_CREATED, _AM_CONTENT_CONTENT_MODIFIED);
-
 			break;
 
 		case "del" :
-			$controller = new icms_ipf_Controller($content_content_handler);
-			$controller->handleObjectDeletion();
+			$contentObj = $content_content_handler->get($clean_content_id);
+			if(is_object($contentObj) && !$contentObj->isNew())  {
+				$subs = $contentObj->getContentSubs($clean_content_id, true);
+				if((isset($_POST['confirm']) && $_POST['confirm'] == TRUE) || !count($subs)) {
+					$controller = new icms_ipf_Controller($content_content_handler);
+					$controller->handleObjectDeletion();
+				}
+				$msg = "Sure that you want to delete content with all sub-contents?";
+				$msg .= "<ul>"
+				foreach($subs as $key => $sub) {
+					$msg .= "<li>".$sub['itemLink']."</li>";
+				}
+				$msg .= "</ul>";
+				icms_core_Message::confirm(array("confirm", TRUE), "content.php?op=del&content_id=".$clean_content_id, $msg);
+			}
 
 			break;
 

@@ -380,7 +380,7 @@ class mod_content_Content extends icms_ipf_seo_Object {
 		$ret['userCanEditAndDelete'] = $this->userCanEditAndDelete();
 		$ret['content_posterid'] = $this->getVar('content_uid', 'e');
 		$ret['itemLink'] = $this->getItemLink();
-		$ret['accessgranted'] = $this->accessGranted();
+		//$ret['accessgranted'] = $this->accessGranted();
 
 		return $ret;
 	}

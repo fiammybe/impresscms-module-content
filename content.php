@@ -118,7 +118,7 @@ if (in_array($clean_op, $valid_op, true)){
 			break;
 
 		default:
-			if (is_object($contentObj) && $contentObj->accessGranted()) {
+			if (is_object($contentObj) && $contentObj->accessGranted() && !$contentObj->isNew()) {
 				$content_content_handler->updateCounter($clean_content_id);
 				$content = $contentObj->toArray();
 				$icmsTpl->assign('content_content', $content);
