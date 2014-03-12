@@ -108,7 +108,7 @@ if (in_array($clean_op, $valid_op, true)) {
 					$controller->handleObjectDeletion();
 				}
 				$msg = "Sure that you want to delete content with all sub-contents?";
-				$msg .= "<ul>"
+				$msg .= "<ul>";
 				foreach($subs as $key => $sub) {
 					$msg .= "<li>".$sub['itemLink']."</li>";
 				}
