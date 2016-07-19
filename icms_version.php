@@ -17,7 +17,7 @@ defined("ICMS_ROOT_PATH") or die("ICMS root path not defined");
 $modversion = array(
 /**  General Information  */
 	'name'						=> _MI_CONTENT_MD_NAME,
-	'version'					=> 1.2,
+	'version'					=> 1.3,
 	'description'				=> _MI_CONTENT_MD_DESC,
 	'author'					=> "Rodrigo P Lima aka TheRplima, Phoenyx, skenow, QM-B",
 	'credits'					=> "The ImpressCMS Project",
@@ -34,10 +34,10 @@ $modversion = array(
 
 /**  Development information */
 	'status_version'			=> "Final",
-	'status'					=> "Final",
-	'date'						=> "02 Sept 2013",
+	'status'					=> "Beta",
+	'date'						=> "20 Aug 2016",
 	'author_word'				=> "",
-	'warning'					=> _CO_ICMS_WARNING_FINAL,
+	'warning'					=> _CO_ICMS_WARNING_BETA,
 
 /** Contributors */
 	'developer_website_url'		=> "http://www.impresscms.org",
