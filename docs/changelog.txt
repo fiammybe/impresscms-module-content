@@ -1,3 +1,9 @@
+=== Content 1.2.1 Final ===
+Release date: 30 Dec 2016
+ '''Fixed'''
+ * Missing delimiter in admin caused fatal error
+ * #449 check for isNew before starting clone
+ 
 === Content 1.2 Final ===
 Release date: 15 Sept 2013
 Revision: 
