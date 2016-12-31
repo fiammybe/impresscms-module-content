@@ -19,10 +19,10 @@ $modversion = array(
 	'name'						=> _MI_CONTENT_MD_NAME,
 	'version'					=> 1.3,
 	'description'				=> _MI_CONTENT_MD_DESC,
-	'author'					=> "Rodrigo P Lima aka TheRplima, Phoenyx, skenow, QM-B",
+	'author'					=> "David Janssens (fiammybe), Rodrigo P Lima aka TheRplima, Phoenyx, skenow, QM-B",
 	'credits'					=> "The ImpressCMS Project",
 	'help'						=> "",
-	'license'					=> "GNU General Public License (GPL)",
+	'license'					=> "GNU General Public License v2 (GPLv2)",
 	'official'					=> 1,
 	'dirname'					=> basename(dirname(__FILE__)),
 	'modname'					=> "content",
@@ -34,10 +34,10 @@ $modversion = array(
 
 /**  Development information */
 	'status_version'			=> "Final",
-	'status'					=> "Beta",
-	'date'						=> "20 Aug 2016",
+	'status'					=> "Final",
+	'date'						=> "30 Dec 2016",
 	'author_word'				=> "",
-	'warning'					=> _CO_ICMS_WARNING_BETA,
+	'warning'					=> _CO_ICMS_WARNING_FINAL,
 
 /** Contributors */
 	'developer_website_url'		=> "http://www.impresscms.org",
@@ -71,8 +71,8 @@ $modversion = array(
 	'object_items'				=> array('content'));
 
 $modversion["tables"] = icms_getTablesArray($modversion['dirname'], $modversion['object_items']);
-
-$modversion['people']['developers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=106]Rodrigo P Lima aka TheRplima[/url]";
+$modversion['people']['developers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=1102]David Janssens (fiammybe)[/url]";
+$modversion['people']['developers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=106]Rodrigo P Lima (TheRplima)[/url]";
 $modversion['people']['developers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=106]phoenyx[/url]";
 $modversion['people']['translators'][] = "[url=http://community.impresscms.org/userinfo.php?uid=106]phoenyx[/url]";
 //$modversion['people']['testers'][] = "";
