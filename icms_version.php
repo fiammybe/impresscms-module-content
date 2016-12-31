@@ -17,7 +17,7 @@ defined("ICMS_ROOT_PATH") or die("ICMS root path not defined");
 $modversion = array(
 /**  General Information  */
 	'name'						=> _MI_CONTENT_MD_NAME,
-	'version'					=> 1.3,
+	'version'					=> 1.2.1,
 	'description'				=> _MI_CONTENT_MD_DESC,
 	'author'					=> "David Janssens (fiammybe), Rodrigo P Lima aka TheRplima, Phoenyx, skenow, QM-B",
 	'credits'					=> "The ImpressCMS Project",
